@@ -1,0 +1,35 @@
+[2026-05-11 21:42:19] [/pet-spa/register.php] [Usuario:GUEST] [Rol:GUEST] [IP:::1] REGISTRO_CLIENTE - Nuevo cliente registrado: omarlimachi473@gmail.com
+[2026-05-11 21:43:27] [/pet-spa/login.php] [Usuario:23] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 21:43:54] [/pet-spa/logout.php] [Usuario:23] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 21:44:31] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 21:47:46] [/pet-spa/admin/users_create.php] [Usuario:1] [Rol:admin] [IP:::1] USUARIO_CREADO - Creó usuario: omarlimachi437@gmail.com (rol_id: 3)
+[2026-05-11 21:48:40] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 21:49:00] [/pet-spa/login.php] [Usuario:24] [Rol:groomer] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 21:49:52] [/pet-spa/cambiar_password.php] [Usuario:24] [Rol:groomer] [IP:::1] PASSWORD_CAMBIADA - Usuario cambió su contraseña
+[2026-05-11 21:50:22] [/pet-spa/logout.php] [Usuario:24] [Rol:groomer] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 21:50:34] [/pet-spa/login.php] [Usuario:GUEST] [Rol:GUEST] [IP:::1] LOGIN_FALLIDO - Usuario no existe: admin@groomingspa.com
+[2026-05-11 21:50:53] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 21:51:11] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 21:51:32] [/pet-spa/login.php] [Usuario:24] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 21:51:37] [/pet-spa/login.php] [Usuario:24] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 21:51:41] [/pet-spa/login.php] [Usuario:24] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 21:51:44] [/pet-spa/login.php] [Usuario:24] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 21:56:39] [/pet-spa/register.php] [Usuario:GUEST] [Rol:GUEST] [IP:::1] REGISTRO_CLIENTE - Nuevo cliente registrado: omarlimachi473@gmail.com
+[2026-05-11 21:57:57] [/pet-spa/login.php] [Usuario:25] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 21:58:12] [/pet-spa/logout.php] [Usuario:25] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 21:58:32] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 22:00:29] [/pet-spa/admin/users_create.php] [Usuario:1] [Rol:admin] [IP:::1] USUARIO_CREADO - Creó usuario: omarlimachi437@gmail.com (rol_id: 3)
+[2026-05-11 22:02:16] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 22:04:34] [/pet-spa/register.php] [Usuario:GUEST] [Rol:GUEST] [IP:::1] REGISTRO_CLIENTE - Nuevo cliente registrado: omarlimachi473@gmail.com
+[2026-05-11 22:05:22] [/pet-spa/login.php] [Usuario:27] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 22:05:38] [/pet-spa/logout.php] [Usuario:27] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 22:06:05] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 22:08:00] [/pet-spa/admin/users_create.php] [Usuario:1] [Rol:admin] [IP:::1] USUARIO_CREADO - Creó usuario: omarlimachi437@gmail.com (rol_id: 3)
+[2026-05-11 22:08:31] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 22:08:52] [/pet-spa/login.php] [Usuario:28] [Rol:groomer] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-11 22:09:48] [/pet-spa/cambiar_password.php] [Usuario:28] [Rol:groomer] [IP:::1] PASSWORD_CAMBIADA - Usuario cambió su contraseña
+[2026-05-11 22:10:01] [/pet-spa/logout.php] [Usuario:28] [Rol:groomer] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-11 22:10:19] [/pet-spa/login.php] [Usuario:28] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 22:10:24] [/pet-spa/login.php] [Usuario:28] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 22:10:29] [/pet-spa/login.php] [Usuario:28] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
+[2026-05-11 22:10:33] [/pet-spa/login.php] [Usuario:28] [Rol:groomer] [IP:::1] LOGIN_FALLIDO - Contraseña incorrecta
