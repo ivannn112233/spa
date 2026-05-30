@@ -1,0 +1,12 @@
+[2026-05-27 20:46:37] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 20:52:48] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 20:59:01] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 21:25:34] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 21:28:50] [/pet-spa/login.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 21:29:39] [/pet-spa/logout.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-27 21:29:50] [/pet-spa/login.php] [Usuario:4] [Rol:groomer] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 21:29:56] [/pet-spa/logout.php] [Usuario:4] [Rol:groomer] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-27 21:30:26] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 21:31:03] [/pet-spa/login.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-27 21:36:29] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-27 21:36:58] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso

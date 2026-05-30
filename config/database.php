@@ -2,7 +2,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'grooming_spa');
 define('DB_USER', 'root');
-define('DB_PASS', ''); // XAMPP por defecto sin contraseña
+define('DB_PASS', '');
 
 class Database {
     private static $instance = null;

@@ -21,17 +21,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $especie = $_POST['especie'];
     $raza = $_POST['raza'];
     $sexo = $_POST['sexo'];
+    $tamano = $_POST['tamano'];
+    $temperamento = $_POST['temperamento'];
     $peso = $_POST['peso'] ?: null;
     $alergias = $_POST['alergias'];
     $restricciones = $_POST['restricciones'];
     
     if($edit_id){
-        $stmt = $db->prepare("UPDATE mascotas SET nombre=?, especie=?, raza=?, sexo=?, peso_kg=?, alergias=?, restricciones_medicas=? WHERE id=?");
-        $stmt->execute([$nombre, $especie, $raza, $sexo, $peso, $alergias, $restricciones, $edit_id]);
+        $stmt = $db->prepare("UPDATE mascotas SET nombre=?, especie=?, raza=?, sexo=?, tamano=?, temperamento=?, peso_kg=?, alergias=?, restricciones_medicas=? WHERE id=?");
+        $stmt->execute([$nombre, $especie, $raza, $sexo, $tamano, $temperamento, $peso, $alergias, $restricciones, $edit_id]);
         header("Location: mascotas.php?msg=Actualizada");
     } else {
-        $stmt = $db->prepare("INSERT INTO mascotas (nombre, especie, raza, sexo, peso_kg, alergias, restricciones_medicas) VALUES (?,?,?,?,?,?,?)");
-        $stmt->execute([$nombre, $especie, $raza, $sexo, $peso, $alergias, $restricciones]);
+        $stmt = $db->prepare("INSERT INTO mascotas (nombre, especie, raza, sexo, tamano, temperamento, peso_kg, alergias, restricciones_medicas) VALUES (?,?,?,?,?,?,?,?,?)");
+        $stmt->execute([$nombre, $especie, $raza, $sexo, $tamano, $temperamento, $peso, $alergias, $restricciones]);
         $mascota_id = $db->lastInsertId();
         $stmt = $db->prepare("INSERT INTO mascota_dueno (mascota_id, cliente_id, es_principal) VALUES (?,?,1)");
         $stmt->execute([$mascota_id, $cliente_id]);
@@ -39,6 +41,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
     exit;
 }
+
+$tamanos = ['pequeno' => 'Pequeño (menos de 10kg)', 'mediano' => 'Mediano (10-25kg)', 'grande' => 'Grande (25-40kg)', 'gigante' => 'Gigante (más de 40kg)'];
+$temperamentos = ['tranquilo' => 'Tranquilo', 'jugueton' => 'Juguetón', 'nervioso' => 'Nervioso', 'agresivo' => 'Agresivo', 'ansioso' => 'Ansioso'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -72,6 +77,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                                 <option value="">Seleccionar</option>
                                 <option value="macho" <?php echo ($mascota['sexo']??'')=='macho'?'selected':''; ?>>Macho</option>
                                 <option value="hembra" <?php echo ($mascota['sexo']??'')=='hembra'?'selected':''; ?>>Hembra</option>
+                            </select>
+                        </div>
+                        <div class="mb-3"><label>Tamaño * (influye en la duración del servicio)</label>
+                            <select name="tamano" class="form-control" required>
+                                <option value="">Seleccionar</option>
+                                <?php foreach($tamanos as $key => $label): ?>
+                                <option value="<?php echo $key; ?>" <?php echo ($mascota['tamano']??'')==$key?'selected':''; ?>><?php echo $label; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                            <small class="text-muted">Pequeño: duración base | Mediano: +10% | Grande: +15% | Gigante: +30%</small>
+                        </div>
+                        <div class="mb-3"><label>Temperamento</label>
+                            <select name="temperamento" class="form-control">
+                                <option value="">Seleccionar</option>
+                                <?php foreach($temperamentos as $key => $label): ?>
+                                <option value="<?php echo $key; ?>" <?php echo ($mascota['temperamento']??'')==$key?'selected':''; ?>><?php echo $label; ?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="mb-3"><label>Peso (kg)</label><input type="number" step="0.01" name="peso" class="form-control" value="<?php echo $mascota['peso_kg'] ?? ''; ?>"></div>

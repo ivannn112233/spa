@@ -3,6 +3,7 @@ require_once 'config/config.php';
 
 if (!Auth::checkAuth()) {
     redirect('login.php');
+    exit;
 }
 
 // Redirigir según el rol
@@ -20,7 +21,6 @@ switch ($_SESSION['user_role']) {
         redirect('cliente/index.php');
         break;
     default:
-        // Si no hay rol válido, cerrar sesión
         $auth = new Auth();
         $auth->logout();
         redirect('login.php');

@@ -1,0 +1,26 @@
+[2026-05-30 16:36:04] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 16:43:43] [/pet-spa/admin/seguridad_ip.php] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 16:44:12] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 16:44:25] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 16:55:57] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 17:03:24] [/pet-spa/admin/seguridad_ip.php] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:04:10] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:04:26] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:06:51] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 17:09:29] [/pet-spa/admin/seguridad_ip.php] [Usuario:1] [Rol:admin] [IP:127.0.0.1] IP_RESTRICCION_CONFIG - Configuró restricción IP: Activada IP: 192.168.100.11
+[2026-05-30 17:11:32] [/pet-spa/admin/seguridad_ip.php] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:11:47] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:12:08] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:12:20] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_IP - Intento de acceso desde IP no autorizada: ::1
+[2026-05-30 17:27:05] [/pet-spa/login.php?error=acceso_restringido] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 17:31:25] [/pet-spa/admin/seguridad_hostname.php] [Usuario:1] [Rol:admin] [IP:::1] HOSTNAME_RESTRICCION_CONFIG - Configuró restricción por hostname: Activada Hostname: DESKTOP-NISO3AR
+[2026-05-30 17:31:38] [/pet-spa/admin/seguridad_hostname.php] [Usuario:1] [Rol:admin] [IP:::1] HOSTNAME_RESTRICCION_CONFIG - Configuró restricción por hostname: Activada Hostname: DESKTOP-NISO3AR
+[2026-05-30 17:32:13] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesion
+[2026-05-30 17:32:43] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 17:37:08] [/pet-spa/admin/seguridad_hostname.php] [Usuario:1] [Rol:admin] [IP:::1] HOSTNAME_RESTRICCION_CONFIG - Configuró restricción por hostname (hasheado)
+[2026-05-30 17:37:39] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesion
+[2026-05-30 17:38:05] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] ACCESO_DENEGADO_HOSTNAME - Intento de acceso desde hostname no autorizado: DESKTOP-NISO3AR (Esperado: $2y$10$EO4k7iAA6kRoTNz9jVmjZOQVe3U/.TjM7zLGE86RfS3MLxCQgQoHC)
+[2026-05-30 17:40:09] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 17:40:14] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-30 17:40:27] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-30 17:40:30] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión

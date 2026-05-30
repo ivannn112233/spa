@@ -1,54 +1,547 @@
-/* Estilos generales */
-body {
-    background-color: #f8f9fa;
+/* ============================================
+   ESTILOS GENERALES PET SPA GROOMING
+   ============================================ */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e67e22;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #3498db;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --gray-color: #95a5a6;
 }
 
-.card {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ============================================
+   SIDEBAR ESTILOS
+   ============================================ */
+
+.sidebar {
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    min-height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: #ecf0f1;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 2px 8px;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(52, 152, 219, 0.3);
+    padding-left: 28px;
+}
+
+.sidebar .nav-link.active {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.sidebar .nav-link i {
+    width: 25px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.sidebar .nav-link.text-danger:hover {
+    background: rgba(231, 76, 60, 0.3);
+}
+
+/* ============================================
+   TARJETAS DE ESTADÍSTICAS
+   ============================================ */
+
+.stat-card {
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.stat-card h2, .stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.stat-card i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+/* ============================================
+   CALENDARIO Y DRAG & DROP
+   ============================================ */
+
+.calendario-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.calendario-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.calendario-table th {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #34495e;
+}
+
+.calendario-table td {
+    border: 1px solid #ddd;
+    vertical-align: top;
+    padding: 0;
+}
+
+.hora-columna {
+    width: 80px;
+    background: #f8f9fa;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.groomer-columna {
+    min-width: 200px;
+    vertical-align: top;
+}
+
+.hora-fila {
+    height: 60px;
+}
+
+.hora-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Estilos para las citas en el calendario */
+.cita-item {
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 4px;
+    cursor: grab;
+    transition: all 0.2s ease;
+    font-size: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.cita-item:active {
+    cursor: grabbing;
+}
+
+.cita-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cita-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+/* Estados de las citas */
+.cita-item.agendada { background: var(--warning-color); }
+.cita-item.confirmada { background: var(--success-color); }
+.cita-item.en_progreso { background: var(--info-color); }
+.cita-item.completada { background: var(--gray-color); }
+.cita-item.cancelada { background: var(--danger-color); text-decoration: line-through; }
+
+/* Slots vacíos */
+.slot-vacio {
+    height: 60px;
+    background: #fef9e7;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.slot-vacio:hover {
+    background: #fff3cd;
+}
+
+.slot-vacio.drag-over {
+    background: #d4edda;
+    border: 2px dashed var(--success-color);
+}
+
+/* ============================================
+   FORMULARIOS
+   ============================================ */
+
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* ============================================
+   CHECKLIST GROOMING
+   ============================================ */
+
+.checklist-item {
+    border-left: 4px solid var(--secondary-color);
+    margin-bottom: 15px;
+    transition: all 0.3s;
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.checklist-item.completed {
+    border-left-color: var(--success-color);
+    background: #f0fff0;
+}
+
+.checklist-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* ============================================
+   GALERÍA DE FOTOS
+   ============================================ */
+
+.foto-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.foto-card:hover {
+    transform: scale(1.05);
+}
+
+.foto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.foto-tipo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.foto-eliminar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(231, 76, 60, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.foto-card:hover .foto-eliminar {
+    opacity: 1;
+}
+
+/* ============================================
+   NOTIFICACIONES
+   ============================================ */
+
+.notificacion-item {
+    border-left: 4px solid var(--info-color);
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.notificacion-item:hover {
+    background: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.notificacion-item .badge-nueva {
+    background: var(--danger-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+/* ============================================
+   PRODUCTOS Y TIENDA
+   ============================================ */
+
+.producto-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.card-header {
-    font-weight: 600;
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* Sidebar */
-.sidebar {
+.producto-precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--success-color);
+}
+
+.cart-badge {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--danger-color);
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
 }
 
-/* Formularios */
-.form-control:focus {
-    border-color: #3498db;
-    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+.cart-badge:hover {
+    transform: scale(1.1);
 }
 
-/* Alertas */
-.alert {
-    border-radius: 10px;
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Botones */
-.btn-primary {
-    background-color: #3498db;
-    border-color: #3498db;
+/* ============================================
+   MEDIDOR DE FUERZA DE CONTRASEÑA
+   ============================================ */
+
+.password-strength {
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 8px;
+    transition: all 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
-}
-
-/* Password meter */
-#password-strength {
+.strength-text {
+    font-size: 12px;
     margin-top: 5px;
 }
 
-#strength-bar {
-    transition: width 0.3s ease;
+/* ============================================
+   PROMOCIONES
+   ============================================ */
+
+.promo-card {
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.promo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.promo-badge {
+    background: var(--accent-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .main-content {
+        margin-left: 0 !important;
+    }
+    
+    .stat-card h2, .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .calendario-table {
+        font-size: 0.7rem;
+    }
+    
+    .cita-item {
+        font-size: 0.6rem;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-header h5, .card-header h4 {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.6s linear infinite;
+}
+
+/* ============================================
+   UTILIDADES
+   ============================================ */
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.bg-gradient-danger {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

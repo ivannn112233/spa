@@ -1,0 +1,21 @@
+[2026-05-24 20:49:07] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 21:32:44] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 21:37:20] [/pet-spa/logout.php] [Usuario:1] [Rol:admin] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 21:38:19] [/pet-spa/login.php] [Usuario:3] [Rol:groomer] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 22:25:22] [/pet-spa/logout.php] [Usuario:3] [Rol:groomer] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 22:26:08] [/pet-spa/login.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 22:36:38] [/pet-spa/logout.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 22:39:13] [/pet-spa/login.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 23:31:54] [/pet-spa/logout.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 23:32:42] [/pet-spa/login.php] [Usuario:7] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 23:40:11] [/pet-spa/logout.php] [Usuario:7] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 23:42:21] [/pet-spa/login.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 23:44:17] [/pet-spa/logout.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 23:45:29] [/pet-spa/login.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 23:47:51] [/pet-spa/cliente/cita_agendar.php] [Usuario:5] [Rol:cliente] [IP:::1] CITA_SOLICITADA - Solicitó cita para mascota ID: 2
+[2026-05-24 23:48:08] [/pet-spa/logout.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 23:48:32] [/pet-spa/login.php] [Usuario:3] [Rol:groomer] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 23:49:51] [/pet-spa/logout.php] [Usuario:3] [Rol:groomer] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 23:50:10] [/pet-spa/login.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
+[2026-05-24 23:53:09] [/pet-spa/logout.php] [Usuario:2] [Rol:recepcion] [IP:::1] LOGOUT - Cierre de sesión
+[2026-05-24 23:53:29] [/pet-spa/login.php] [Usuario:5] [Rol:cliente] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso

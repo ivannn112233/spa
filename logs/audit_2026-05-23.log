@@ -1,0 +1,3 @@
+[2026-05-23 23:58:49] [/pet-spa/login.php] [Usuario:GUEST] [Rol:GUEST] [IP:::1] LOGIN_FALLIDO - Usuario no existe: dmin@petspa.com
+[2026-05-23 23:59:01] [/pet-spa/login.php] [Usuario:GUEST] [Rol:GUEST] [IP:::1] LOGIN_FALLIDO - Usuario no existe: dmin@petspa.com
+[2026-05-23 23:59:21] [/pet-spa/login.php] [Usuario:1] [Rol:admin] [IP:::1] LOGIN_EXITOSO - Inicio de sesión exitoso
